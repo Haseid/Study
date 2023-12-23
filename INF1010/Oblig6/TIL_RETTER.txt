@@ -1,0 +1,101 @@
+TIL_RETTER.txt av Lars Halvorsen (larshalv)
+
+Om programmet:
+Mitt program fungerer som det skal, jeg har ikke tatt
+med så mange feilmeldinger om evt. hva som går galt.
+Denne obligen har jeg kommentert veldig detaljert
+ettersom at jeg har fått god hjelp av mine medstudenter
+
+ 1. Parallellitet: Hvilke operasjoner kan gå i parallell
+ og hvilke kan ikke gå i parallell i programmet ditt
+ (Amdahls lov)?
+
+ I mitt program deles lista med ord opp i (nesten) like
+ store deler. Antall delere er tråd-antallet. Hver tråd
+ sorterer sin liste parallellt med de andre trådene.
+ etter det flettes to og to tråder, i mitt program skjer
+ ikke dette parallellt fordi jeg bruker en synchronized
+ metode, dvs. at all trådene må vente til en annen tråd
+ er ferdig med metoden, grunnen er at trådene ikke skal
+ lage to eller flere lister som er ferdig sortert, men
+ det er noe som kunne ha gått parallellt.
+
+ Amdahl's lov
+ Grensen for parallellisering er den ikke-parallelle
+ delen av programmet. I hovedsak er Amdahl's lov at
+ programmer er alltid begrenset av den delen som ikke
+ kan parallelliseres.
+
+ Man bør ta Amdahl's lov i betraktning så mye som
+ mulig framover, maskiner kommer til å få flere og
+ flere kjerner og det er viktig å ta disse i bruk.
+
+ 2. Kjøretiden programmet ditt bruker på sorteringen i
+ forhold til «antOrd» og «antTråder».
+
+På names.txt fila:
+---------------------------------------------
+tråder:		Tid i sek:
+---------------------------------------------
+1			0.90 - 0.94
+2			0.41 - 0.44
+4			0.25 - 0.31
+8			0.20 - 0.24
+16			0.19 - 0.31
+32			0.20 - 0.22
+64			0.21 - 0.24
+---------------------------------------------
+
+Programmet opptimaliseres mellom 8 - 16 tråder, men jeg
+tenker at jo flere tråder, jo mindre venting blir det før
+de kan starte å flette etter sorteringen, noen tråder
+kan bruke mere tid på flettingen enn det andre kan bruke.
+når jeg testet med 5000 tråder brukte programmet 1.1 sek.
+så da bruker nok programmet mere tid på å flette enn å
+sortere. merker også at jo flere tråder jeg bruker jo
+gjevnere blir tiden det tar. Tenker at størrelsen på fila
+har en del å si når den er så liten.
+
+På sowpods.txt fila:		"sowpods.txt"x2:
+---------------------------------------------
+tråder:		Tid i sek:		Tid i sek:
+---------------------------------------------
+50			11.2 - 12.2		unknown
+75			7.71 - 7.99		unknown
+100			5.52 - 5.58		22.6 - 23.1
+500			1.60 - 1.72		4.04 - 4.31
+1000		1.37 - 1.41		2.82 - 2.92
+---------------------------------------------
+
+Her kan du sammenligne de to filene, den ene er dobbelt
+så stor, du ser at jo større fila ar jo flere tråder
+trenger du får å få sortert de raskest. grunnen til dette
+er nok at noen tråder bruker kortere tid enn andre å sortere
+og må derfor vente på de andre for å starte flettingen.
+jo flere tråder du har da jo mindre blir det å sortere og
+flettingen kan starte fortere.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

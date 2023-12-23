@@ -1,0 +1,585 @@
+Lars-MacBook-Air:Oblig2 Ninjaboy$ java Oblig2 buildhouse1.txt
+ 
+-------- Task info --------
+
+Task ID: 1
+Name: Build-walls
+Time usage: 4
+Manpower: 2
+Slack: 0
+Latest start: 4
+Edges: 
+Task 2, Build-roofs
+Task 3, Put-on-wallpapers
+
+Task ID: 2
+Name: Build-roofs
+Time usage: 6
+Manpower: 4
+Slack: 0
+Latest start: 8
+Edges: 
+Task 3, Put-on-wallpapers
+Task 4, Put-on-tiles
+Task 7, Put-carpet-floor
+
+Task ID: 3
+Name: Put-on-wallpapers
+Time usage: 1
+Manpower: 2
+Slack: 3
+Latest start: 17
+Edges: 
+Task 8, Move-in
+
+Task ID: 4
+Name: Put-on-tiles
+Time usage: 1
+Manpower: 3
+Slack: 7
+Latest start: 21
+Edges: 
+
+Task ID: 5
+Name: Build-foundation
+Time usage: 4
+Manpower: 2
+Slack: 0
+Latest start: 0
+Edges: 
+Task 1, Build-walls
+Task 6, Make-floor
+
+Task ID: 6
+Name: Make-floor
+Time usage: 2
+Manpower: 2
+Slack: 8
+Latest start: 12
+Edges: 
+Task 7, Put-carpet-floor
+
+Task ID: 7
+Name: Put-carpet-floor
+Time usage: 4
+Manpower: 2
+Slack: 0
+Latest start: 14
+Edges: 
+Task 8, Move-in
+
+Task ID: 8
+Name: Move-in
+Time usage: 4
+Manpower: 4
+Slack: 0
+Latest start: 18
+Edges: 
+
+-------- Critical tasks --------
+
+Task 1, Build-walls
+Task 2, Build-roofs
+Task 5, Build-foundation
+Task 7, Put-carpet-floor
+Task 8, Move-in
+
+-------- Project schedule --------
+
+Time: 0
+Starting: 5
+Current Staff: 2
+
+Time: 4
+Starting: 1
+Finished: 5
+Starting: 6
+Current Staff: 4
+
+Time: 6
+Finished: 6
+Current Staff: 2
+
+Time: 8
+Finished: 1
+Starting: 2
+Current Staff: 4
+
+Time: 14
+Finished: 2
+Starting: 3
+Starting: 4
+Starting: 7
+Current Staff: 7
+
+Time: 15
+Finished: 3
+Finished: 4
+Current Staff: 2
+
+Time: 18
+Finished: 7
+Starting: 8
+Current Staff: 4
+
+Time: 22
+Finished: 8
+Current Staff: 0
+
+Lars-MacBook-Air:Oblig2 Ninjaboy$ java Oblig2 buildhouse2.txt
+ 
+Loop was found in the schedule: 
+1 Build-walls
+2 Build-roofs
+3 Put-on-wallpapers
+6 Make-floor
+1 Build-walls
+Lars-MacBook-Air:Oblig2 Ninjaboy$ java Oblig2 buildrail.txt
+
+-------- Task info --------
+
+Task ID: 1
+Name: Install-pavement
+Time usage: 20
+Manpower: 10
+Slack: 12
+Latest start: 198
+Edges: 
+
+Task ID: 2
+Name: Install-railing
+Time usage: 7
+Manpower: 10
+Slack: 206
+Latest start: 211
+Edges: 
+
+Task ID: 3
+Name: Install-ticketmachine
+Time usage: 1
+Manpower: 10
+Slack: 154
+Latest start: 217
+Edges: 
+
+Task ID: 4
+Name: Paint-tower-1-with-arch
+Time usage: 15
+Manpower: 6
+Slack: 84
+Latest start: 203
+Edges: 
+
+Task ID: 5
+Name: Paint-tower-2
+Time usage: 12
+Manpower: 6
+Slack: 82
+Latest start: 206
+Edges: 
+
+Task ID: 6
+Name: Paint-trusses
+Time usage: 27
+Manpower: 6
+Slack: 5
+Latest start: 191
+Edges: 
+
+Task ID: 7
+Name: Paint-cables-and-rods
+Time usage: 18
+Manpower: 6
+Slack: 14
+Latest start: 200
+Edges: 
+
+Task ID: 8
+Name: Put-lane-tunnel-and-intersection
+Time usage: 12
+Manpower: 7
+Slack: 143
+Latest start: 194
+Edges: 
+Task 3, Install-ticketmachine
+Task 31, Polish-lane-on-arch
+
+Task ID: 9
+Name: Setup-barrack
+Time usage: 3
+Manpower: 10
+Slack: 5
+Latest start: 5
+Edges: 
+Task 10, Prepare-storage
+Task 11, Rig-ramspace-reinforcing
+Task 12, Build-tunnel
+Task 14, Build-intersection
+Task 16, Build-towerfoundation-1
+Task 17, Build-towerfoundation-2
+
+Task ID: 10
+Name: Prepare-storage
+Time usage: 2
+Manpower: 4
+Slack: 206
+Latest start: 209
+Edges: 
+Task 2, Install-railing
+
+Task ID: 11
+Name: Rig-ramspace-reinforcing
+Time usage: 1
+Manpower: 4
+Slack: 10
+Latest start: 13
+Edges: 
+Task 18, Make-armouring-tower-1
+Task 19, Make-armouring-tower-2
+Task 20, Make-armouring-arch
+
+Task ID: 12
+Name: Build-tunnel
+Time usage: 30
+Manpower: 12
+Slack: 143
+Latest start: 146
+Edges: 
+Task 13, Clean-tunnel
+
+Task ID: 13
+Name: Clean-tunnel
+Time usage: 18
+Manpower: 12
+Slack: 143
+Latest start: 176
+Edges: 
+Task 8, Put-lane-tunnel-and-intersection
+
+Task ID: 14
+Name: Build-intersection
+Time usage: 25
+Manpower: 12
+Slack: 146
+Latest start: 149
+Edges: 
+Task 15, Clean-intersection
+
+Task ID: 15
+Name: Clean-intersection
+Time usage: 20
+Manpower: 12
+Slack: 146
+Latest start: 174
+Edges: 
+Task 8, Put-lane-tunnel-and-intersection
+
+Task ID: 16
+Name: Build-towerfoundation-1
+Time usage: 35
+Manpower: 12
+Slack: 16
+Latest start: 19
+Edges: 
+Task 21, Encase-and-armour-tower-1
+
+Task ID: 17
+Name: Build-towerfoundation-2
+Time usage: 45
+Manpower: 12
+Slack: 5
+Latest start: 8
+Edges: 
+Task 22, Encase-and-armour-tower-2
+
+Task ID: 18
+Name: Make-armouring-tower-1
+Time usage: 40
+Manpower: 4
+Slack: 10
+Latest start: 14
+Edges: 
+Task 21, Encase-and-armour-tower-1
+
+Task ID: 19
+Name: Make-armouring-tower-2
+Time usage: 25
+Manpower: 4
+Slack: 24
+Latest start: 28
+Edges: 
+Task 22, Encase-and-armour-tower-2
+
+Task ID: 20
+Name: Make-armouring-arch
+Time usage: 12
+Manpower: 4
+Slack: 140
+Latest start: 144
+Edges: 
+Task 23, Encase-and-armour-arch
+
+Task ID: 21
+Name: Encase-and-armour-tower-1
+Time usage: 15
+Manpower: 5
+Slack: 10
+Latest start: 54
+Edges: 
+Task 24, Cast-tower-1
+
+Task ID: 22
+Name: Encase-and-armour-tower-2
+Time usage: 16
+Manpower: 5
+Slack: 5
+Latest start: 53
+Edges: 
+Task 25, Cast-tower-2
+
+Task ID: 23
+Name: Encase-and-armour-arch
+Time usage: 30
+Manpower: 5
+Slack: 140
+Latest start: 156
+Edges: 
+Task 26, Cast-arch
+
+Task ID: 24
+Name: Cast-tower-1
+Time usage: 60
+Manpower: 7
+Slack: 10
+Latest start: 69
+Edges: 
+Task 4, Paint-tower-1-with-arch
+Task 27, Stretch-two-maincables
+
+Task ID: 25
+Name: Cast-tower-2
+Time usage: 60
+Manpower: 7
+Slack: 5
+Latest start: 69
+Edges: 
+Task 5, Paint-tower-2
+Task 27, Stretch-two-maincables
+
+Task ID: 26
+Name: Cast-arch
+Time usage: 20
+Manpower: 7
+Slack: 140
+Latest start: 186
+Edges: 
+Task 31, Polish-lane-on-arch
+
+Task ID: 27
+Name: Stretch-two-maincables
+Time usage: 25
+Manpower: 10
+Slack: 5
+Latest start: 129
+Edges: 
+Task 28, Build-truss-1-with-rods
+Task 29, Build-truss-2-with-rods
+
+Task ID: 28
+Name: Build-truss-1-with-rods
+Time usage: 30
+Manpower: 10
+Slack: 12
+Latest start: 161
+Edges: 
+Task 1, Install-pavement
+Task 6, Paint-trusses
+Task 7, Paint-cables-and-rods
+Task 30, Cast-lane-on-truss
+
+Task ID: 29
+Name: Build-truss-2-with-rods
+Time usage: 37
+Manpower: 10
+Slack: 5
+Latest start: 154
+Edges: 
+Task 1, Install-pavement
+Task 6, Paint-trusses
+Task 7, Paint-cables-and-rods
+Task 30, Cast-lane-on-truss
+
+Task ID: 30
+Name: Cast-lane-on-truss
+Time usage: 20
+Manpower: 7
+Slack: 0
+Latest start: 186
+Edges: 
+Task 31, Polish-lane-on-arch
+
+Task ID: 31
+Name: Polish-lane-on-arch
+Time usage: 12
+Manpower: 7
+Slack: 0
+Latest start: 206
+Edges: 
+
+-------- Critical tasks --------
+
+Task 30, Cast-lane-on-truss
+Task 31, Polish-lane-on-arch
+
+-------- Project schedule --------
+
+Time: 0
+Starting: 9
+Current Staff: 10
+
+Time: 3
+Finished: 9
+Starting: 10
+Starting: 11
+Starting: 12
+Starting: 14
+Starting: 16
+Starting: 17
+Current Staff: 56
+
+Time: 4
+Finished: 11
+Starting: 18
+Starting: 19
+Starting: 20
+Current Staff: 64
+
+Time: 5
+Starting: 2
+Finished: 10
+Current Staff: 70
+
+Time: 12
+Finished: 2
+Current Staff: 60
+
+Time: 16
+Finished: 20
+Starting: 23
+Current Staff: 61
+
+Time: 28
+Finished: 14
+Starting: 15
+Current Staff: 61
+
+Time: 29
+Finished: 19
+Current Staff: 57
+
+Time: 33
+Finished: 12
+Starting: 13
+Current Staff: 57
+
+Time: 38
+Finished: 16
+Current Staff: 45
+
+Time: 44
+Finished: 18
+Starting: 21
+Current Staff: 46
+
+Time: 46
+Finished: 23
+Starting: 26
+Current Staff: 48
+
+Time: 48
+Finished: 15
+Finished: 17
+Starting: 22
+Current Staff: 29
+
+Time: 51
+Starting: 8
+Finished: 13
+Current Staff: 24
+
+Time: 59
+Finished: 21
+Starting: 24
+Current Staff: 26
+
+Time: 63
+Starting: 3
+Finished: 8
+Current Staff: 29
+
+Time: 64
+Finished: 3
+Finished: 22
+Starting: 25
+Current Staff: 21
+
+Time: 66
+Finished: 26
+Current Staff: 14
+
+Time: 119
+Starting: 4
+Finished: 24
+Current Staff: 13
+
+Time: 124
+Starting: 5
+Finished: 25
+Starting: 27
+Current Staff: 22
+
+Time: 134
+Finished: 4
+Current Staff: 16
+
+Time: 136
+Finished: 5
+Current Staff: 10
+
+Time: 149
+Finished: 27
+Starting: 28
+Starting: 29
+Current Staff: 20
+
+Time: 179
+Finished: 28
+Current Staff: 10
+
+Time: 186
+Starting: 1
+Starting: 6
+Starting: 7
+Finished: 29
+Starting: 30
+Current Staff: 29
+
+Time: 204
+Finished: 7
+Current Staff: 23
+
+Time: 206
+Finished: 1
+Finished: 30
+Starting: 31
+Current Staff: 13
+
+Time: 213
+Finished: 6
+Current Staff: 7
+
+Time: 218
+Finished: 31
+Current Staff: 0
+
+Lars-MacBook-Air:Oblig2 Ninjaboy$ 

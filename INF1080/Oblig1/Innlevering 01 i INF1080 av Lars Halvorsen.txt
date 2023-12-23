@@ -1,0 +1,30 @@
+Innlevering 01 i INF1080 av Lars Halvorsen (innleveringsfrist: mandag 2. sept. 23:59).
+Oppgaver: 1.8, 1.9 og 1.10 i oppgavesett 01.
+
+
+Oppgave 1.8
+
+	(a) Sant
+	(b) Ikke Sant
+	(c) Sant
+	(d) Sant
+	(e) Ikke sant
+	(f) Ikke sant
+	(g) Sant
+	(h) Sant
+
+
+Oppgave 1.9
+
+	(a) {1,3,5,7,9} \ {0,1,2,3,4} = {5,7,9}
+	(b) {0,1,2,3,4} \ {1,3,5,7,9} = {0,2,4}
+	(c) ({1,3,5,7,9} u {0,1,2,3,4}) n {5,6,7,8,9} = {5,7,9}
+	(d) {5,6,7,8,9} \ ({1,3,5,7,9} u {0,1,2,3,4}) = {6,8}
+	(e) ({1,3,5,7,9} \ {0,1,2,3,4}) \ {5,6,7,8,9} = ø
+	(f) ({0,1,2,3,4} u {5,6,7,8,9}) \ {1,3,5,7,9} = {0,2,4,6,8}
+
+
+Oppgave 1.10
+
+	(a) Mengden {1,2,3,4} har 2(opphøyd i)4 = 16 delmengder
+	(a) Mengden {1,2,3,4,5} har 2(opphøyd i)5 = 32 delmengder

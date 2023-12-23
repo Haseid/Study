@@ -1,0 +1,125 @@
+--------------------------------------------
+
+Statistics:
+Tree depth: 28
+Nodes on tree level 0:	1
+Nodes on tree level 1:	2
+Nodes on tree level 2:	4
+Nodes on tree level 3:	8
+Nodes on tree level 4:	16
+Nodes on tree level 5:	32
+Nodes on tree level 6:	62
+Nodes on tree level 7:	117
+Nodes on tree level 8:	201
+Nodes on tree level 9:	337
+Nodes on tree level 10:	532
+Nodes on tree level 11:	786
+Nodes on tree level 12:	1058
+Nodes on tree level 13:	1291
+Nodes on tree level 14:	1424
+Nodes on tree level 15:	1487
+Nodes on tree level 16:	1483
+Nodes on tree level 17:	1338
+Nodes on tree level 18:	1189
+Nodes on tree level 19:	942
+Nodes on tree level 20:	665
+Nodes on tree level 21:	482
+Nodes on tree level 22:	333
+Nodes on tree level 23:	219
+Nodes on tree level 24:	126
+Nodes on tree level 25:	71
+Nodes on tree level 26:	43
+Nodes on tree level 27:	16
+Nodes on tree level 28:	4
+Average depth of all nodes: 15
+First word: elektrolytt
+Final word: familiefellesskaps
+
+Type "q" to exit the program
+
+Type a word: 
+
+--------------------------------------------
+
+Type a word: etterfølger
+
+etterfølger
+The word is correct
+
+Type "q" to exit the program
+
+Type a word: 
+
+--------------------------------------------
+
+Type a word: eterfølger
+
+eterfølger
+The word is incorrect
+
+Did you mean:
+etterfølger
+
+Number of positive answers: 1
+Time used: 0.006 sec
+
+Type "q" to exit the program
+
+Type a word: 
+
+--------------------------------------------
+
+Type a word: etterfolger
+
+etterfolger
+The word is incorrect
+
+Did you mean:
+etterfølger
+
+Number of positive answers: 1
+Time used: 0.006 sec
+
+Type "q" to exit the program
+
+Type a word: 
+
+--------------------------------------------
+
+Type a word: etterfølgern
+
+etterfølgern
+The word is incorrect
+
+Did you mean:
+etterfølgerne
+etterfølger
+etterfølgere
+etterfølgeren
+etterfølgers
+
+Number of positive answers: 5
+Time used: 0.005 sec
+
+Type "q" to exit the program
+
+Type a word: 
+
+--------------------------------------------
+
+Type a word: tterfølger
+
+tterfølger
+The word is incorrect
+
+Did you mean:
+etterfølger
+
+Number of positive answers: 1
+Time used: 0.005 sec
+
+Type "q" to exit the program
+
+Type a word:
+
+--------------------------------------------

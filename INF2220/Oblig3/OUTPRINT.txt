@@ -1,0 +1,51 @@
+OUTPRINT:
+
+---------------------------------------------------------------
+
+[larshalv@frederik Oblig3]$ java Oblig3 needle.txt haystack.txt
+Haystack:	cogwrgaccag
+Needle:		c_g
+Match found: cog, at index: 0
+Match found: cag, at index: 8
+
+---------------------------------------------------------------
+
+[larshalv@frederik Oblig3]$ java Oblig3 needle.txt haystack.txt
+Haystack:	cogwrgaccag
+Needle:		c__
+Match found: cog, at index: 0
+Match found: cca, at index: 7
+Match found: cag, at index: 8
+
+---------------------------------------------------------------
+
+[larshalv@frederik Oblig3]$ java Oblig3 needle.txt haystack.txt
+Haystack:	cogwrgaccag
+Needle:		__g
+Match found: cog, at index: 0
+Match found: wrg, at index: 3
+Match found: cag, at index: 8
+
+---------------------------------------------------------------
+
+[larshalv@frederik Oblig3]$ java Oblig3 needle.txt haystack.txt
+Haystack:	cogwrgaccag
+Needle:		___
+Match found: cog, at index: 0
+Match found: ogw, at index: 1
+Match found: gwr, at index: 2
+Match found: wrg, at index: 3
+Match found: rga, at index: 4
+Match found: gac, at index: 5
+Match found: acc, at index: 6
+Match found: cca, at index: 7
+Match found: cag, at index: 8
+
+---------------------------------------------------------------
+
+[larshalv@frederik Oblig3]$ java Oblig3 needle.txt haystack.txt
+Haystack:	cogwrgaccag
+Needle:		g__g
+Match found: gwrg, at index: 2
+
+---------------------------------------------------------------
